@@ -1,0 +1,105 @@
+col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure navbar spans the full width */
+    background-color: #256e5a;
+    padding: 7px 10px;
+    text-align: center;
+    z-index: 1000;
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between logo, heading, and menu */
+}
+
+navbar-logo{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+.navbar-menu {
+    display: flex;
+     flex-direction: row;
+     justify-content:flex-end;
+     
+}
+.navbar-logo{
+    text-align: left;
+}
+.navbar-heading h1{
+    text-align: right;
+}
+.navbar-menu a{
+    background-color: transparent;
+    padding: 5px 10px;
+    margin: 20px 0px;
+}
+.profile .profile-top-image{
+    width: 130px;
+    transition: width 2s,transform 2s;
+}
+.profile .profile-top-image:hover{
+    width: 170px;
+   
+}
+.profile .profile-text {
+      width: 50%;
+      text-align: center;
+}
+.aboutme-image{
+    margin-top: 190px;
+}
+.aboutme-image img{
+    width: 225px;
+    height: 267px;
+}
+.professional-experience {
+    padding: 50px 150px;
+}
+.contact-form .contact-me-container p input{
+   
+    width: 400px;
+   
+}
+.contact-form .contact-me-container p textarea{
+  
+    width: 400px;
+   
+}
+
+.social-media{
+    position: relative;
+
+}
+.media-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 250px;
+}
+.footer .footer-menu{
+    padding: 1px 2px;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    position: relative;
+}
+.footer .footer-disc{
+    position: absolute;
+    left: 1240px;
+    color: whitesmoke;
+}

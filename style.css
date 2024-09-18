@@ -1,0 +1,471 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Fira Sans", sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+img{
+    width: 130px;
+    height: 90px;
+}
+a{
+    text-decoration: none;
+    color: #f7efef;
+    margin: 5px 7px;
+    padding: 0px 8px;
+    font-size: larger;
+    text-transform: uppercase;
+    padding: 15px;
+}
+h1{
+    font-size: 40px;
+    color: #f7efef;
+}
+h2{
+    font-size: 30px;
+    color: #f7efef;
+    padding: 3px 5px;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+[class*="col-"]{
+    width: 100%;
+}
+.navbar{
+    
+    background-color: #256e5a;
+    padding: 7px 10px;
+    text-align: center;
+    
+    
+}
+.navbar-menu {
+    display: flex;
+     flex-direction: column;
+     
+}
+.navbar-menu a{
+    background-color: #214d41;
+    border-radius: 100px;
+}
+.navbar-menu a:hover{
+    background-color: #3d5c55;
+}
+.navbar::after{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+.profile{
+    padding: 130px 10px;
+    text-align: center;
+    position: relative;
+}
+.profile .profile-top-image img{
+    width: 130px;
+    height: 130px;
+}
+.profile .profile-top-image{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    transition: transform 2s;
+}
+.profile .profile-top-image:hover{
+   transform: rotate(360deg);
+}
+.profile .profile-text{
+    padding :5px 10px;
+    margin: 0 auto;
+}
+.profile-text h1{
+    font-family: "Satisfy", system-ui;
+    font-size: 3rem;
+    color: black;
+}
+.profile-text p{
+    font-size: 1.2rem;
+    color: gray;
+}
+.profile .profile-bottom-image img{
+    width: 130px;
+    height: 130px;
+}
+.profile .profile-bottom-image{
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    transition: transform 2s;
+}
+.profile .profile-bottom-image:hover{
+   transform: rotate(360deg);
+}
+.profile::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+.aboutme{
+    background-color:rgb(18, 120, 120) ;
+    padding: 20px;
+    text-align: center;
+    color: #f7efef;
+    font-family: "Montserrat", system-ui;
+}
+.dotted-hr{
+    border: 6px dotted #f7efef;
+    border-bottom: none;
+    width: 9%;
+}
+.aboutme-image img{
+    border: 2px  solid #f7efef;
+    border-radius: 50%;
+    width: 130px;
+    height: 160px;
+    
+
+}
+.aboutme-text p{
+    font-size: 19px;
+    padding: 10px 20px;
+}
+
+.aboutme-hr{
+    border-width: 70%;
+    box-shadow: 0.5px 0.5px 1.2px  black;
+}
+.aboutme-text a{
+    text-transform: lowercase;
+
+}
+.cv-button{
+    background-color: #07322f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #f7efef;
+    border-radius: 15px;
+}
+ .cv-button:hover{
+    background-color: #286051;
+}
+
+.aboutme::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.professional-experience{
+   
+
+}
+
+.professional-experience .card{
+    background-color: rgb(100, 98, 98);
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 650px;
+    width: 480px;
+    transition: 0.4s;
+}
+.professional-experience .card .card-icon img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    text-align: center;
+    padding:10px;
+}
+.professional-experience .card .card-icon{
+    text-align: center;
+}
+.professional-experience .card .card-title{
+    font-size: 25px;
+    margin: 2px 1px;
+
+    text-align: center;
+    background-color: rgb(43, 42, 42);
+}
+.professional-experience .card .card-disc{
+    font-size: 20px;
+    margin: 8px 8px;
+
+}
+.professional-experience .card .card-disc ol{
+    padding: 10px 12px;
+}
+.professional-experience .card:hover{
+     box-shadow: 4px 6px 7px black;
+    
+
+
+}
+.professional-experience .card-disc a{
+    text-transform: none;
+    padding: 0 0;
+    margin: 0 0;
+    font-size: 20px;
+}
+.skill-container{
+  font-size: medium;
+}
+.skill-container li{
+    list-style: none;
+    padding: 3% 2%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    right: 15px;
+    font-size: 17px;
+}
+.skill-container li::before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0px;
+    width: 100%;
+    height: 8px;
+    background-color: rgb(111, 55, 164);
+    
+    border-radius: 1000px;
+    }
+    .skill-container li::after{
+        content: "";
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 0px;
+        width: 100%;
+        height: 8px;
+        background-color: rgb(45, 26, 61);
+        border-radius: 1000px;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: 5;
+
+        } 
+        .skill-container  li.html::after{
+            animation-name: html;
+        }
+        @keyframes  html{
+            0%
+            {
+                width: 0%;
+            }
+            100%{
+                width: 90%;
+            }
+
+        }
+
+.skill-container  li.css::after{
+            animation-name: css;
+        }
+        @keyframes  css{
+            0%
+            {
+                width: 0%;
+            }
+            100%{
+                width: 83%;
+            }
+
+        }
+
+.skill-container  li.js::after{
+            animation-name: js;
+        }
+        @keyframes  js{
+            0%
+            {
+                width: 0%;
+            }padding: 0.5px 0.5px;
+            100%{
+                width: 40%;
+            }
+
+        }
+
+.skill-container  li.react::after{
+            animation-name: react;
+        }
+        @keyframes  react{
+            0%
+            {
+                width: 0%;
+            }
+            100%{
+                width: 30%;
+            }
+
+        }
+
+.skill-container  li.nj::after{
+            animation-name: nj;
+        }
+        @keyframes  nj{
+            0%
+            {
+                width: 0%;
+            }
+            100%{
+                width: 25%;
+            }
+
+        }
+
+.skill-container  li.ej::after{
+            animation-name: ej;
+        }
+        @keyframes  ej{
+            0%
+            {
+                width: 0%;
+            }
+            100%{
+                width: 19%;
+            }
+
+        }
+
+.skill-container  li.md::after{
+            animation-name: md;
+        }
+        @keyframes  md{ 
+          
+            0%
+            {
+                width: 0%;
+            }
+            100%{
+                width: 17%;
+            }
+
+        }
+
+.skill-container  li.ms::after{
+            animation-name: ms;
+        }
+        @keyframes  ms{
+            0%
+            {
+                width: 0%;
+            }
+            100%{
+                width: 10%;
+            }
+
+        }
+
+.skill-container  li.git::after{
+            animation-name: git;
+        }
+        @keyframes  git{
+            0%
+            {
+                width: 0%;
+            }
+            100%{
+                width: 15%;
+            }
+
+        }
+
+
+
+
+
+.professional-experience::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.contact-form{
+    padding: 1%;
+    width: 100%;
+    background-color: rgb(18, 120, 120);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.contact-form .contact-me-container p input{
+    padding: 10px 20px;
+    margin: 10px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+
+}
+.contact-form .contact-me-container p textarea{
+    padding: 10px 20px;
+    margin: 10px;
+    width: 100%;
+   
+    text-align: center;
+    
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+    resize: none;
+    
+
+}
+social-media{
+    text-align: center;
+}
+.media-btn{
+    padding: 10px 20px;
+    margin: 10px 12px;
+}
+.media-btn .btn{
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 35px;
+    border: none;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+
+
+}
+.media-btn .btn:hover{
+    background-color: gray;
+}
+
+.contact-form::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: #000000;
+    text-align: center;
+}
+.footer .footer-menu{
+    display: flex;
+    flex-direction: row;
+}
+.footer .footer-disc{
+    color: whitesmoke;
+}
+.footer::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
